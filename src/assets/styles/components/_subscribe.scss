@@ -1,0 +1,48 @@
+.subscribe {
+    padding-bottom: 14rem;
+
+    &__title {
+
+
+        &-h2 {
+            @include h2($color: $whiteTitleMain, $size: $titleOneSize, $mb: 2.8rem);
+            margin-top: 14rem;
+        }
+
+        &-p1 {
+            @include p1($color: $whiteTitleMain, $fs: $textOne);
+            margin-bottom: 5.2rem;
+        }
+    }
+
+    &__form {
+        &-input {
+            width: 52.1rem;
+            height: 7.9rem;
+            border: none;
+            border-radius: 5px;
+
+            margin-right: 2.2rem;
+            margin-bottom: 1rem;
+
+            &::placeholder {
+                font-size: 1.6rem;
+                color: rgba(44, 44, 44, 0.7);
+                transform: translateX(3.6rem);
+            }
+        }
+
+        &-btn {
+            @include btn();
+            cursor: pointer;
+            width: 21.4rem;
+            height: 7.9rem;
+            line-height: 1.84;
+            letter-spacing: 0.46px;
+
+            &:hover {
+                box-shadow: $mainShadow;
+            }
+        }
+    }
+}

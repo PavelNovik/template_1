@@ -1,0 +1,91 @@
+@mixin h1($color: $blackTitle, $mb: 3.6rem) {
+    font-size: 6rem;
+    color: $color;
+    font-family: $mainFont;
+    margin-bottom: $mb;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+@mixin h2($color: $blackTitleMain, $size: $titleOneSize, $mb: 3.4rem) {
+    font-size: $size;
+    font-family: $mainFont;
+    color: $color;
+    font-weight: bold;
+    line-height: 1.3;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: $mb;
+
+
+}
+
+@mixin h3($color: $blackTitleMain, $mb: 3.5rem) {
+    font-size: $titleH3Size;
+    color: $color;
+    font-family: $mainFont;
+    font-weight: 600;
+    letter-spacing: 0.31px;
+    text-transform: uppercase;
+    margin-bottom: $mb;
+}
+
+@mixin h4($color: $blackText) {
+    font-size: $titleH4Size;
+    color: $color;
+    font-family: $mainFont;
+    font-weight: 600;
+    letter-spacing: 0.24px;
+}
+
+@mixin p1($color: $blackText, $fs: $textOne) {
+    font-size: $fs;
+    color: $color;
+    font-family: $mainFont;
+    font-weight: normal;
+    line-height: 1.73;
+    letter-spacing: normal;
+}
+
+@mixin p2($color: $blackTitle, $fs: $textTwo) {
+    font-size: $fs;
+    color: $color;
+    font-family: $mainFont;
+    font-weight: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+}
+
+@mixin lead($color: $whiteTitleMain, $fs: 1.85rem) {
+    font-size: $fs;
+    color: $color;
+    font-family: $mainFont;
+    font-weight: bold;
+    line-height: 1.84;
+    letter-spacing: 0.46px;
+
+}
+
+@mixin btn($color: #ffffff, $bgc: #ff2d2d) {
+    font-size: 1.85rem;
+    line-height: 1.84;
+
+    font-weight: bold;
+
+    color: $color;
+    background-color: $bgc;
+    text-decoration: none;
+    border: solid 2px #f00;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+@mixin redLine($marg: 2.9rem auto 8.8rem auto) {
+    width: 132px;
+    height: 3px;
+    margin: $marg;
+    background-color: #ff2d2d;
+
+}

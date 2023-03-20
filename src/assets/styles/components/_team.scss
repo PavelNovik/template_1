@@ -1,0 +1,59 @@
+.team {
+    &__title {
+        &-h2 {
+            @include h2();
+
+        }
+
+        &-p1 {
+            @include p1();
+        }
+
+        &-redLine {
+            @include redLine($marg: 3.3rem auto 6.9rem 0);
+
+        }
+    }
+
+    &__person {
+
+
+        &_foto {}
+
+        &_block {
+            &_text {
+                &-h3 {
+                    @include h3();
+                }
+
+                &-p2 {
+                    @include p2()
+                }
+            }
+
+            &_links {
+                &-item {
+                    @include p2($color: $blackTitleMain, $fs: 2.4rem);
+                    font-style: italic;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-shadow: rgb(22, 20, 13) 1px 0 10px;
+                    }
+                }
+            }
+
+            &_members {
+                &-item {
+
+                    &-name {
+                        @include lead($color: #fff, $fs: 1.85rem);
+                        text-transform: uppercase;
+                        text-align: center;
+
+                    }
+                }
+            }
+        }
+    }
+}

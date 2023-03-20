@@ -1,0 +1,61 @@
+.contacts {
+    &__title {
+        &-h2 {
+            @include h2();
+        }
+
+        &-p1 {
+            @include p2();
+        }
+
+        &-redLine {
+            @include redLine();
+        }
+    }
+
+    &__forms {
+
+
+        &_inputs {
+            &-form {
+                &-input {
+                    &::placeholder {
+                        font-size: 1.55rem;
+                        color: $blackText;
+                        transform: translateX(4.8rem);
+                    }
+                }
+
+                &-textarea {
+                    font-size: 1.55rem;
+                    color: $blackText;
+                    font-family: $mainFont;
+                }
+
+                &-btn {
+                    @include btn();
+                    width: 73.1rem;
+                    text-transform: uppercase;
+                    height: 7.2rem;
+                    cursor: pointer;
+
+                    &:hover {
+                        box-shadow: $mainShadow;
+                    }
+                }
+            }
+        }
+
+        &_info {
+            &-h4 {
+                @include h4($color: $whiteTitleMain);
+                font-size: 1.85rem;
+                text-transform: uppercase;
+            }
+
+            &-p2 {
+                @include p2($color: $whiteTitleMain, $fs: $textTwo);
+            }
+        }
+    }
+}

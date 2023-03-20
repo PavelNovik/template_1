@@ -1,0 +1,62 @@
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+
+        &-h2 {
+            margin-top: 5rem;
+            text-align: center;
+        }
+
+        &-p1 {
+            width: 50.4rem;
+            text-align: center;
+        }
+
+        &-redLine {
+            @include redLine(2.9rem auto 8.8rem auto);
+        }
+    }
+
+    &__templates {
+        &-list {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 6rem;
+            margin-right: 15.6rem;
+            margin-left: 15.6rem;
+
+
+            &-item {
+                margin-right: 5.8rem;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &-galery {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+
+
+            &-item {
+                width: 29.77rem;
+                height: 29.02rem;
+                background-color: #f5f0dd;
+                margin-bottom: 1.95rem;
+
+                &:hover {
+                    box-shadow: -2px -10px 20.5px rgba(0, 0, 0, 0.16);
+                }
+            }
+
+        }
+    }
+}

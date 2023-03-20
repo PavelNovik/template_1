@@ -1,0 +1,37 @@
+.feature {
+    &__title {
+
+
+        &-h2 {
+            @include h2($color: $blackTitleMain, $size: $titleTwoSize, $mb: 3.4rem);
+            font-weight: bold
+        }
+
+        &-p1 {
+            @include p1();
+        }
+    }
+
+    &__templates {
+        &-list {
+            &-item {
+                opacity: 0.7;
+                text-decoration: none;
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 1.09;
+                letter-spacing: 0.22px;
+                color: $blackText;
+                text-transform: uppercase;
+
+                &:hover {
+                    text-shadow: rgb(22, 20, 13) 1px 0 10px;
+                }
+
+                &Active {
+                    color: $redBtn;
+                }
+            }
+        }
+    }
+}

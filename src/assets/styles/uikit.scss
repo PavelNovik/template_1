@@ -1,0 +1,170 @@
+@import './utils';
+@import './components';
+@import './layout';
+
+
+.divider {
+    height: 50px;
+}
+
+.container {
+    max-width: 1250px;
+    margin: auto;
+}
+
+.ui__title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    text-decoration: underline;
+}
+
+.h1 {
+    @include h1();
+}
+
+.h2 {
+    @include h2();
+}
+
+.h3 {
+    @include h3();
+}
+
+.h4 {
+    @include h4();
+}
+
+.p1 {
+    @include p1();
+}
+
+.p2 {
+    @include p2();
+}
+
+.lead {
+    @include lead();
+}
+
+.header__menu {
+    max-width: 124.9rem;
+    background-color: #000;
+    height: 8.9rem;
+    border: none;
+    margin-bottom: 10.3rem;
+
+    display: flex;
+    justify-content: center;
+
+    &-item {
+        display: flex;
+        min-width: 9rem;
+        height: 8.9rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-right: 3rem;
+        padding-left: 5px;
+        padding-right: 6px;
+
+        &-link {
+            color: $whiteTitle;
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            letter-spacing: 0.49rem;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        &:hover {
+            background-color: #ff3f40;
+            box-shadow: $mainShadow;
+        }
+
+    }
+
+    &-itemActive {
+        background-color: #ff3f40;
+        box-shadow: $mainShadow;
+    }
+}
+
+.btn {
+
+
+    &-red {
+        @include btn();
+        padding: 2rem 6.3rem;
+        display: inline-block;
+
+        &:hover {
+            box-shadow: $mainShadow;
+        }
+    }
+
+    &-white {
+        @include btn($color: #ff2d2d, $bgc: #ffffff);
+        padding: 2rem 6.3rem;
+        display: inline-block;
+
+        &:hover {
+            box-shadow: $mainShadow;
+        }
+    }
+
+    &-mailForm {
+        @include btn($color: #ffffff, $bgc: #ff2d2d);
+        padding: 3.3rem 5.7rem 3.2rem 5.8rem;
+        text-transform: uppercase;
+        display: inline-block;
+
+
+        &:hover {
+            box-shadow: $mainShadow;
+        }
+    }
+
+    &-form {
+        @include btn($color: #ffffff, $bgc: #ff2d2d);
+        padding: 2.9rem 29.4rem 2.9rem 29.6rem;
+        text-transform: uppercase;
+        display: inline-block;
+
+
+        &:hover {
+            box-shadow: $mainShadow;
+        }
+    }
+}
+
+.info__blok-tools {
+    display: flex;
+    background-color: #ffffff;
+
+    &-item {
+        width: 27.1rem;
+        height: 24rem;
+
+        &>.h4 {
+            margin-bottom: 1.7rem;
+        }
+
+        &>.p2 {
+            color: $blackText;
+            font-size: $textTwo;
+        }
+
+        &:nth-child(2n) {
+            width: 29rem;
+        }
+    }
+}
+
+.long__line {
+    max-width: 1249px;
+    height: 2px;
+    margin: 107px 166px 106px 164px;
+    background-color: #ececec;
+
+}

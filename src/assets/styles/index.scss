@@ -1,0 +1,11 @@
+@import './utils';
+@import './components';
+@import './layout';
+
+
+.container {
+    width: 100%;
+    max-width: 125rem;
+    margin: 0 auto;
+    padding: 0 0.8rem 0 0.8rem;
+}

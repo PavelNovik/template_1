@@ -1,0 +1,30 @@
+.copyrights {
+
+    &__text {
+
+        &-p {
+            font-size: 1.6rem;
+            color: #b8b8b8;
+        }
+    }
+
+    &__icons {
+
+
+        &_icon {
+            font-family: $iconFont;
+            font-size: 4.3rem;
+            color: #b8b8b8;
+            text-decoration: none;
+            margin-right: 1.7rem;
+
+            &:hover {
+                color: white;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
